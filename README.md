@@ -1,6 +1,6 @@
-# session11_implementation
+# Teams Points Counter
 
-A new Flutter project.
+GDSC Al-Azhar Session Implementation
 
 ## Getting Started
 
