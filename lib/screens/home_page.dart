@@ -31,14 +31,20 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const Text(
                     "Team A",
-                    style: TextStyle(color: Colors.black, fontSize: 40),
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 45,
+                    ),
                   ),
                   Text(
                     widget.teamACounter.toString(),
-                    style: const TextStyle(color: Colors.black, fontSize: 60),
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 80,
+                    ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(bottom: 20),
                     child: CustomButton(
                       text: "Add 1 Point",
                       OnPressed: () {
@@ -49,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(bottom: 20),
                     child: CustomButton(
                       text: "Add 2 Point",
                       OnPressed: () {
@@ -60,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(bottom: 20),
                     child: CustomButton(
                       text: "Add 3 Point",
                       OnPressed: () {
@@ -85,14 +91,20 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const Text(
                     "Team B",
-                    style: TextStyle(color: Colors.black, fontSize: 40),
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 45,
+                    ),
                   ),
                   Text(
                     widget.teamBCounter.toString(),
-                    style: const TextStyle(color: Colors.black, fontSize: 60),
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 80,
+                    ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(bottom: 20),
                     child: CustomButton(
                       text: "Add 1 Point",
                       OnPressed: () {
@@ -103,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(bottom: 20),
                     child: CustomButton(
                       text: "Add 2 Point",
                       OnPressed: () {
@@ -114,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.only(bottom: 20),
                     child: CustomButton(
                       text: "Add 3 Point",
                       OnPressed: () {
@@ -128,14 +140,19 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-          CustomButton(
-            text: "Reset",
-            OnPressed: () {
-              setState(() {
-                widget.teamACounter = 0;
-                widget.teamBCounter = 0;
-              });
-            },
+          Padding(
+            padding: EdgeInsets.only(top: 10),
+            child: CustomButton(
+              text: "Reset",
+              OnPressed: () {
+                setState(
+                  () {
+                    widget.teamACounter = 0;
+                    widget.teamBCounter = 0;
+                  },
+                );
+              },
+            ),
           ),
         ],
       ),
